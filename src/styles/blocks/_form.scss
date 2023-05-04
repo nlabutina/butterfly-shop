@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
+}
+
+.form-field {
+  flex-basis: 33.33%;
+  padding-left: $gap-half;
+  padding-right: $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 100%;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 30px;
+  }
+}
+
+.form-field-half {
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 35px;
+  margin-top: 8px;
+  color: $color-dark;
+  font-family: $font;
+  font-size: 28px;
+  line-height: 34px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: none;
+}
+
+.form-label {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.form-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 35px 0;
+  color: #fff;
+  font-family: $font;
+  font-size: 28px;
+  line-height: 34px;
+  background-color: $color-accent;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 40px;
+  }
+}

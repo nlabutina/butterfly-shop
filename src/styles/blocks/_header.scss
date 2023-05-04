@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: $color-dark;
+
+  @media (max-width: $mobile-max) {
+    padding: 16px 0;
+  }
+
+}
+
+.header-inner {
+  @include inner;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-image: url(/images/burger.png);
+  background-color: rgb(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
+
+}
+
